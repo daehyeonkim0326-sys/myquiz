@@ -1,0 +1,35 @@
+#Quizepage{
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.3);
+    .Q{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            padding: 0.6rem 2rem;
+            text-align: center;
+            background-color: blueviolet;
+            border-radius: 16px;
+        }
+    }
+    p{
+        padding: 0 2rem;
+    }
+    ul{
+        
+        padding: 1rem;
+        li{
+            cursor: pointer;
+            padding: 1rem;
+            display: block;
+            
+            &:hover{
+                background-color: rgb(190, 133, 243);
+                display: inline-block;
+                border: 1px solid rgb(199, 133, 243);
+                border-radius: 16px;
+            }
+        }
+    }
+}

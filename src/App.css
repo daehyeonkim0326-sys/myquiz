@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./img/d77b0c8130f4d9d515cbfc248c39e904.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  .card {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;              /* ★ 슬라이드 기준 잡는 용도 */
+    background-image: url(./img/iphone.jpg);
+    background-size: cover;
+    width: 360px;
+    height: 630px;
+    overflow: hidden;
+    border: rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    color: aliceblue;
+
+    /* ↓ 카테고리 버튼 슬라이드 영역 */
+    .choice {
+      position: absolute;
+      left: 50%;
+      /* top: 260px;                    처음 위치 (제목 밑 정도) */
+      transform: translateX(-50%) translateY(0);
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      transition: transform 0.6s ease-in-out;  /* 애니메이션 핵심 */
+
+      li {
+        list-style: none;
+        background-color: blueviolet;
+        padding: 0.8rem 1.3rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        white-space: nowrap;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease,
+          opacity 0.3s ease;
+
+        &:hover {
+          background-color: rgb(197, 140, 250);
+          transform: translateY(-2px);
+        }
+      }
+    }
+
+    /* ↓ 아래로 내려간 상태 */
+    .choice.choice--down {
+      transform: translateX(-50%) translateY(400px);
+      /* 숫자 조절해서 더 밑으로 내리고 싶으면 220px 키우면 됨 */
+    }
+
+    .blur {
+      display: block;
+      h3 {
+        text-align: center;
+        padding: 1rem;
+      }
+      backdrop-filter: blur(10px);
+    }
+
+    .menu {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      font-size: 16px;
+
+      h1 {
+        span {
+          color: blueviolet;
+        }
+      }
+    }
+  }
+}
+
+#categories {
+    text-align: center;
+  h3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+  }
+}
+
+#end{
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    h1{
+        height: 50px;
+        span{
+            color: red;
+        }
+    }
+    button{
+        padding: 1rem 2rem;
+        border: 1px solid blueviolet;
+        border-radius: 2rem;
+        background-color: blueviolet;
+        color: aliceblue;
+        &:hover{
+            background-color: rgb(196, 142, 247);
+        }
+    }
+}
