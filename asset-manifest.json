@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/myquiz/static/css/main.f09e98e8.css",
+    "main.js": "/myquiz/static/js/main.4bd16289.js",
+    "static/media/jpg": "/myquiz/static/media/d77b0c8130f4d9d515cbfc248c39e904.1151b7dd02a899c71b6d.jpg",
+    "static/media/iphone.jpg": "/myquiz/static/media/iphone.a73173a5c0d5d351d2d4.jpg",
+    "index.html": "/myquiz/index.html",
+    "main.f09e98e8.css.map": "/myquiz/static/css/main.f09e98e8.css.map",
+    "main.4bd16289.js.map": "/myquiz/static/js/main.4bd16289.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f09e98e8.css",
+    "static/js/main.4bd16289.js"
+  ]
+}
