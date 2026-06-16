@@ -1,6 +1,8 @@
 title: Quiz
     
-URL:"https://daehyeonkim0326-sys.github.io/myquiz/",
+URL:"https://daehyeonkim0326-sys.github.io/myquiz/"
+
+Figma:"https://www.figma.com/design/ltVcUOvZ2D02BnXy78CWqf/Quiz?node-id=0-1&t=zX85Pa0W57vQDOHJ-1"
 
 json를 이용한 질문 데이터를 ai를 활용하여 제작한 quiz 사이트 입니다.
     
